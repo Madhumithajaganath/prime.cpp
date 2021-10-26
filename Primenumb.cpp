@@ -10,9 +10,12 @@ int main() {
     cout << "Enter a positive  integer: ";
     cin >> n;
 
-    for(i = 2; i <= n/2; ++i) {
-        if (checkPrime(i)) {
-            if (checkPrime(n - i)) {
+    for(i = 2; i <= n/2; ++i) 
+    {
+        if (checkPrime(i)) 
+        {
+            if (checkPrime(n - i)) 
+            {
                 cout << n << " = " << i << " + " << n-i << endl;
                 flag = true;
             }
